@@ -1,0 +1,10 @@
+{% block content %}
+<h1>Contact Form</h1>
+
+<form method="POST" action="{% url 'index' %}">
+    {% csrf_token %}
+    <label>Message: </label>
+    <textarea name="message" placeholder="Message ..."></textarea><br><br>
+    <input type="submit" name="Yuborish">
+</form>
+{% endblock %}
